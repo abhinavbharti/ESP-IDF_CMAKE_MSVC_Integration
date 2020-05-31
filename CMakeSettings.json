@@ -1,0 +1,61 @@
+﻿{
+  "configurations": [
+    {
+      "name": "Esp32-Freertos-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "linux_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\..\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "intelliSenseMode": "linux-gcc-arm",
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "${projectDir}\\board.esp32.freertos.gcc.cmake",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "name": "Esp32-Freertos-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "linux_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\..\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "intelliSenseMode": "linux-gcc-arm",
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "${projectDir}\\board.esp32.freertos.gcc.cmake",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "name": "Esp32-Freertos-RelWithDebInfo",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "linux_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\..\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "intelliSenseMode": "linux-gcc-arm",
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "${projectDir}\\board.esp32.freertos.gcc.cmake",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}
